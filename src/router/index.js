@@ -11,6 +11,7 @@ const routes = [
     component: HomeView,
     children: [
       { path: "timeLine", component: () => import("@/views/TimeLine.vue") },
+      { path: "todos", component: () => import("@/views/TodosView.vue") },
     ],
   },
   {
