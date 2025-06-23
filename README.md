@@ -1,24 +1,111 @@
-# cat-time-memory
+# 猫咪时光记录 🐱 Cat Time Memory
 
-## Project setup
-```
+一个专为猫咪爱好者打造的时光记录应用，记录与毛孩子的美好时光。
+
+## 📱 项目简介
+
+Cat Time Memory 是一个基于 Vue.js 开发的移动端 Web 应用，让您可以轻松记录和分享与爱猫的珍贵时光。无论是可爱的照片、温馨的文字记录、有趣的视频，还是猫咪的呼噜声，都能在这里得到完美保存。
+
+## ✨ 功能特性
+
+### 🕒 时光轴记录
+- **多媒体支持**：支持图片、文字、视频、音频多种记录格式
+- **时间线展示**：按时间顺序展示所有记录，清晰回顾每个美好瞬间
+- **精美界面**：粉色系温馨设计，专为猫咪主题定制
+
+### 📋 记录类型
+- 📸 **图片记录**：上传猫咪的可爱照片
+- 📝 **文字日记**：记录与猫咪的日常互动和感受
+- 🎥 **视频片段**：保存猫咪的动态瞬间
+- 🔊 **音频记录**：录制猫咪的呼噜声、叫声等珍贵声音
+
+### 🎨 用户体验
+- 📱 移动端优化设计
+- 🎨 温馨的粉色主题配色
+- 🚀 流畅的单页面应用体验
+- 💫 响应式布局，适配不同屏幕尺寸
+
+## 🛠️ 技术栈
+
+- **前端框架**: Vue.js 2.6.14
+- **路由管理**: Vue Router 3.5.1
+- **状态管理**: Vuex 3.6.2
+- **构建工具**: Vue CLI 5.0
+- **代码规范**: ESLint + Prettier
+- **样式**: CSS3 + Scoped Styles
+
+## 🚀 快速开始
+
+### 环境要求
+- Node.js 14+ 
+- npm 6+ 或 yarn 1.22+
+
+### 安装依赖
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+### 开发环境启动
+```bash
 npm run serve
 ```
+启动后访问: http://localhost:8080
 
-### Compiles and minifies for production
-```
+### 生产环境构建
+```bash
 npm run build
 ```
 
-### Lints and fixes files
-```
+### 代码检查和修复
+```bash
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 📁 项目结构
+
+```
+cat-time-memory/
+├── public/                 # 静态资源
+│   ├── index.html         # HTML 模板
+│   └── favicon.ico        # 网站图标
+├── src/                   # 源代码
+│   ├── assets/           # 静态资源
+│   ├── router/           # 路由配置
+│   │   └── index.js      # 路由定义
+│   ├── store/            # Vuex 状态管理
+│   ├── views/            # 页面组件
+│   │   ├── HomeView.vue  # 首页布局
+│   │   ├── TimeLine.vue  # 时光轴页面
+│   │   └── AboutView.vue # 关于页面
+│   ├── App.vue           # 根组件
+│   └── main.js           # 应用入口
+├── package.json          # 项目配置
+└── README.md            # 项目说明
+```
+
+## 🎯 开发计划
+
+- [ ] 添加记录功能
+- [ ] 待办事项管理
+- [ ] 重要记录标记
+- [ ] 数据持久化存储
+- [ ] 云端同步功能
+- [ ] 分享功能
+- [ ] 主题切换
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request 来帮助改进项目！
+
+## 📄 许可证
+
+本项目仅供学习和个人使用。
+
+## 📞 联系
+
+如有问题或建议，欢迎通过 Issue 反馈。
+
+---
+
+> 💝 用心记录每一个与猫咪的美好瞬间
+

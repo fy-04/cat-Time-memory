@@ -9,6 +9,7 @@
     <!-- 时间轴主体 -->
     <div class="timeline-container">
       <div class="timeline-item" v-for="item in timeLineRecord" :key="item.id">
+        <!-- TODO: 把时间轴每个 card 抽成组件 把 item 和其他需要的信息传进去渲染 -->
         <div class="timeline-marker">
           <div class="timeline-dot"></div>
           <div class="timeline-date">{{ item.date }}</div>
