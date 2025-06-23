@@ -1,0 +1,51 @@
+/* src/assets/styles/global.css */
+
+/* 现代CSS重置（基于Andy Bell的方案）*/
+:root {
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+/* 1. 使用更直观的盒模型 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. 移除默认边距 */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. 设置核心body默认值 */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: var(--font-sans);
+  text-rendering: optimizeSpeed;
+}
+
+/* 4. 移除列表样式（酌情使用） */
+ul[class], ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+/* 5. 媒体元素更易使用 */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. 继承表单控件的字体 */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. 移除所有动画和过渡（酌情添加） */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
