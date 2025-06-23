@@ -10,11 +10,11 @@
     <!-- 待办事项统计 -->
     <div class="todo-stats">
       <div class="stat-item">
-        <span class="stat-count">4</span>
+        <span class="stat-count">{{ pendingTasks.length }}</span>
         <span class="stat-label">待完成</span>
       </div>
       <div class="stat-item">
-        <span class="stat-count">2</span>
+        <span class="stat-count">{{ completedTasks.length }}</span>
         <span class="stat-label">已完成</span>
       </div>
       <div class="stat-item">
@@ -30,7 +30,10 @@
         <h3 class="category-title">待完成</h3>
         <ul class="task-list">
           <li v-for="task in pendingTasks" :key="task.id" class="task-item">
-            <div class="task-checkbox unchecked"></div>
+            <div
+              class="task-checkbox unchecked"
+              @click="changeCheck(task)"
+            ></div>
             <div class="task-content">
               <span class="task-text">{{ task.text }}</span>
               <span class="task-date">{{ task.date }}</span>
@@ -44,7 +47,9 @@
         <h3 class="category-title">已完成</h3>
         <ul class="task-list">
           <li v-for="task in completedTasks" :key="task.id" class="task-item">
-            <div class="task-checkbox checked">✓</div>
+            <div class="task-checkbox checked" @click="changeCheck(task)">
+              ✓
+            </div>
             <div class="task-content">
               <span class="task-text">{{ task.text }}</span>
               <span class="task-date">{{ task.date }}</span>
@@ -83,6 +88,9 @@ export default {
     showAddModal() {
       // 添加新待办事项的逻辑
       console.log("打开添加模态框");
+    },
+    changeCheck(task) {
+      task.completed = !task.completed;
     },
   },
 };
