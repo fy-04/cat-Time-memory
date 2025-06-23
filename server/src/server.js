@@ -17,9 +17,7 @@ const dataService = new DataService();
 // 获取时间线列表
 app.get("/api/timeline", (req, res) => {
   try {
-    console.log("lwt log=> 111");
     const timeLineList = dataService.getTimeLineList();
-    console.log("lwt log=> 222");
     res.json({
       success: true,
       data: timeLineList,
