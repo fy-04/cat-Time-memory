@@ -2,7 +2,7 @@
   <div class="timeline-container">
     <div class="timeline-item" v-for="item in record" :key="item.id">
       <!-- TODO: 当前日期如果和前一个相同的话，透明化 timeline-marker -->
-      <div class="timeline-marker">
+      <div class="timeline-marker" v-if="item.flag">
         <div class="timeline-dot"></div>
         <div class="timeline-date">{{ item.date }}</div>
       </div>

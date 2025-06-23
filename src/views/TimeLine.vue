@@ -7,7 +7,7 @@
     </div>
 
     <!-- 时间轴主体 -->
-    <timeLineCardVue :record="timeLineRecord"></timeLineCardVue>
+    <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
       timeLineRecord: [
         {
           id: "5",
-          date: "2025-05-12",
+          date: "2025-05-20",
           time: "09:30",
           type: "text",
           content: {
@@ -98,11 +98,25 @@ export default {
       ],
     };
   },
-  methods: {
-    showAddModal() {
-      // 这里可以触发添加记录的逻辑
-      console.log("显示添加记录模态框");
+  computed: {
+    groupedRecordsWithDateFlag() {
+      if (!this.timeLineRecord.length) return [];
+      const grouped = [...this.timeLineRecord].sort((a, b) => {
+        const dateFlag = new Date(a.date) - new Date(b.date);
+        return dateFlag === 0 ? a.time.localeCompare(b.time) : dateFlag;
+      });
+      // return grouped;
+      return grouped.map((item, index) => {
+        return {
+          ...item,
+          flag: item.date != grouped[index - 1]?.date || index === 0,
+        };
+      });
     },
+  },
+  mounted() {
+    console.log(this.timeLineRecord);
+    console.log(this.groupedRecordsWithDateFlag);
   },
 };
 </script>
