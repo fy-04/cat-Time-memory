@@ -1,7 +1,7 @@
 <template>
   <div class="timeline-container">
     <div class="timeline-item" v-for="item in record" :key="item.id">
-      <!-- TODO: 把时间轴每个 card 抽成组件 把 item 和其他需要的信息传进去渲染 -->
+      <!-- TODO: 当前日期如果和前一个相同的话，透明化 timeline-marker -->
       <div class="timeline-marker">
         <div class="timeline-dot"></div>
         <div class="timeline-date">{{ item.date }}</div>
