@@ -9,6 +9,9 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    children: [
+      { path: "timeLine", component: () => import("@/views/TimeLine.vue") },
+    ],
   },
   {
     path: "/about",
