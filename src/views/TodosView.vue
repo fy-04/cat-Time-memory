@@ -78,10 +78,16 @@ export default {
   },
   computed: {
     pendingTasks() {
-      return this.tasks.filter((task) => !task.completed);
+      const pdTask = this.tasks.filter((task) => !task.completed);
+      return pdTask.sort((a, b) => {
+        return new Date(a.date) - new Date(b.date);
+      });
     },
     completedTasks() {
-      return this.tasks.filter((task) => task.completed);
+      const cpTask = this.tasks.filter((task) => task.completed);
+      return cpTask.sort((a, b) => {
+        return new Date(a.date) - new Date(b.date);
+      });
     },
   },
   methods: {
