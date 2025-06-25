@@ -138,13 +138,11 @@ class DataService {
 
   // 数据库连接钩子 - 为后续接入数据库预留
   async connectDatabase() {
-    // TODO: 实现数据库连接逻辑
     console.log("数据库连接钩子 - 待实现");
   }
 
   // 数据迁移钩子 - 为后续接入数据库预留
   async migrateToDatabase() {
-    // TODO: 将内存数据迁移到数据库
     console.log("数据迁移钩子 - 待实现");
   }
 }
