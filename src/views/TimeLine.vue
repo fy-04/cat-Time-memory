@@ -107,7 +107,9 @@ export default {
       /**
        * TODO:
        * 1. [...this.timeLineRecord] 是什么意思
+       * 扩展运算符浅拷贝原数组，生成新的数组
        * 2. [...this.timeLineRecord].sort 为什么要这样，为什么不直接 this.timeLineRecord.sort
+       * 会报错，sort方法会修改原数组带来附加问题
        */
       const grouped = [...this.timeLineRecord].sort((a, b) => {
         const dateFlag = new Date(a.date) - new Date(b.date);
