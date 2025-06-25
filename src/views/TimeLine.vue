@@ -144,6 +144,15 @@ export default {
 </script>
 
 <style scoped>
+/* 
+ * TODO:
+ * 1. 这个 scoped 什么作用
+ * 2. 上下居中样式来一个 flex 实现
+ * 3. 盒子模型，margin border padding 是什么意思，理解吗，从内到外谁是谁，border-box 和 content-box 是什么意思
+ * 4. 绝对定位什么用，用了它会咋样
+ * 5. 背景色和文字颜色用什么样式
+ */
+
 /* 基础样式 */
 .timeline-page {
   background-color: #fff9fa;
