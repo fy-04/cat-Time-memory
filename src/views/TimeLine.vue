@@ -7,17 +7,22 @@
     </div>
 
     <!-- 时间轴主体 -->
-    <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue>
+    <!-- <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue> -->
+    <TimeLineCard :record="groupedRecordsWithDateFlag"></TimeLineCard>
   </div>
 </template>
 
 <script>
-import timeLineCardVue from "@/components/timeLineCard.vue";
+// import timeLineCardVue from "@/components/timeLineCard.vue";
 import request from "@/utils/request";
+import { TimeLineCard } from "cat-time-kit-fy-test";
 
 export default {
   name: "TimeLine",
-  components: { timeLineCardVue },
+  components: {
+    // timeLineCardVue,
+    TimeLineCard,
+  },
   data() {
     return {
       timeLineRecord: [],
