@@ -144,19 +144,6 @@ export default {
 </script>
 
 <style scoped>
-/* 
- * TODO:
- * 1. 这个 scoped 什么作用【防止样式透传，实现组件级别的样式封装】
- * 2. 上下居中样式来一个 flex 实现
-  *display: flex;
-  *align-items: center;
- * 3. 盒子模型，margin【外边距】 border【边框】 padding【内边距】 是什么意思，理解吗，从内到外【padding border margin】谁是谁，border-box 和 content-box 是什么意思
- *border-box的宽度包含padding和border【推荐使用，全局样式已经优化】；content-box的宽度不包含padding和border，仅仅为内容区域
- * 4. 绝对定位什么用，用了它会咋样
- *脱离文档流，相对最近的定位祖先或文档根调整位置
- * 5. 背景色和文字颜色用什么样式
- *background-color和color
-
 /* 基础样式 */
 .timeline-page {
   background-color: #fff9fa;
