@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.10.0",
-    "cat-time-kit-fy-test": "^1.0.1",
+    "cat-time-kit-fy-test": "^1.0.2",
     "cat-time-kit-test": "^1.0.1",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
