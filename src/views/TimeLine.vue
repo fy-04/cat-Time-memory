@@ -1,5 +1,5 @@
 <template>
-  <!-- 测试日志 2 -->
+  <!-- 测试日志 我是重要的改动 -->
   <div class="timeline-page">
     <!-- 顶部状态栏git test0627 -->
     <div class="header">
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-// import timeLineCardVue from "@/components/timeLineCard.vue";
 import request from "@/utils/request";
 import { TimeLineCard } from "cat-time-kit-fy-test";
 
