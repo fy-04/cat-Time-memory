@@ -1,7 +1,7 @@
 <template>
   <!-- 测试日志 我是重要的改动1 -->
   <div class="timeline-page">
-    <!-- git test 0630 -->
+    <!-- 顶部状态栏git test0627 fkkkk -->
     <div class="header">
       <h1 class="app-title">时光轴</h1>
       <button class="add-button">+</button>
