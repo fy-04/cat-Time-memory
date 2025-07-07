@@ -153,6 +153,9 @@ export default {
 </script>
 
 <style scoped>
+::v-deep .timeline-content {
+  border: 2px pink solid;
+}
 /* 基础样式 */
 .timeline-page {
   background-color: #fff9fa;
