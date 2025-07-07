@@ -9,6 +9,7 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    redirect: "/timeLine",
     children: [
       { path: "timeLine", component: () => import("@/views/TimeLine.vue") },
       { path: "todos", component: () => import("@/views/TodosView.vue") },
@@ -26,6 +27,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 
