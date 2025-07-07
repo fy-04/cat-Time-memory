@@ -1,5 +1,5 @@
 <template>
-  <!-- 测试日志 我是重要的改动1 -->
+  <!-- 测试日志 我是重要的改动12 -->
   <div class="timeline-page">
     <!-- 顶部状态栏git test0627 fkkkk -->
 
@@ -10,8 +10,9 @@
       <!-- 1 -->
       <button class="add-button">+</button>
     </div>
-
     <!-- 时间轴主体fy0707 -->
+    <!-- 时间轴主体 lwt test 保留我的 -->
+
     <!-- <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue> -->
     <TimeLineCard :record="groupedRecordsWithDateFlag"></TimeLineCard>
   </div>
