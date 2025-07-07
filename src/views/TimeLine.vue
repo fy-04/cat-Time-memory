@@ -2,12 +2,16 @@
   <!-- 测试日志 我是重要的改动1 -->
   <div class="timeline-page">
     <!-- 顶部状态栏git test0627 fkkkk -->
+
+    <!-- git test 0630 这里给你随便修改一点代码 test0627 fkkkk-->
+
     <div class="header">
       <h1 class="app-title">时光轴</h1>
+      <!-- 1 -->
       <button class="add-button">+</button>
     </div>
 
-    <!-- 时间轴主体 -->
+    <!-- 时间轴主体fy0707 -->
     <!-- <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue> -->
     <TimeLineCard :record="groupedRecordsWithDateFlag"></TimeLineCard>
   </div>
@@ -20,9 +24,11 @@ import { TimeLineCard } from "cat-time-kit-fy-test";
 export default {
   name: "TimeLine",
   components: {
-    // timeLineCardVue,
+    // timeLineCardVue,222
     TimeLineCard,
   },
+  // 3
+  // 4
   data() {
     return {
       timeLineRecord: [],
@@ -106,6 +112,7 @@ export default {
     };
   },
   computed: {
+    // 5
     groupedRecordsWithDateFlag() {
       if (!this.timeLineRecord.length) return [];
 
