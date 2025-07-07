@@ -7,7 +7,7 @@
       <button class="add-button">+</button>
     </div>
 
-    <!-- 时间轴主体 -->
+    <!-- 时间轴主体 lwt test 保留我的 -->
     <!-- <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue> -->
     <TimeLineCard :record="groupedRecordsWithDateFlag"></TimeLineCard>
   </div>
