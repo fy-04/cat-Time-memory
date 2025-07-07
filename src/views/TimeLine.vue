@@ -5,8 +5,7 @@
       <button class="add-button">+</button>
     </div>
 
-    <div v-if="!groupedRecordsWithDateFlag.length">加载中～</div>
-    <TimeLineCard v-else :record="groupedRecordsWithDateFlag"></TimeLineCard>
+    <TimeLineCard :record="groupedRecordsWithDateFlag"></TimeLineCard>
   </div>
 </template>
 
