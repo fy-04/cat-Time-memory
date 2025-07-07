@@ -1,20 +1,10 @@
 <template>
-  <!-- 测试日志 我是重要的改动123 -->
-  <!-- 测试日志 我是重要的改动66660707 -->
   <div class="timeline-page">
-    <!-- 顶部状态栏git test0627 fkkkk -->
-
-    <!-- git test 0630 这里给你随便修改一点代码 test0627 fkkkk-->
-
     <div class="header">
       <h1 class="app-title">时光轴</h1>
-      <!-- 1 -->
       <button class="add-button">+</button>
     </div>
-    <!-- 时间轴主体fy0707 -->
-    <!-- 时间轴主体 lwt test 保留我的 -->
 
-    <!-- <timeLineCardVue :record="groupedRecordsWithDateFlag"></timeLineCardVue> -->
     <TimeLineCard :record="groupedRecordsWithDateFlag"></TimeLineCard>
   </div>
 </template>
@@ -26,11 +16,8 @@ import { TimeLineCard } from "cat-time-kit-fy-test";
 export default {
   name: "TimeLine",
   components: {
-    // timeLineCardVue,222
     TimeLineCard,
   },
-  // 3
-  // 4
   data() {
     return {
       timeLineRecord: [],
@@ -192,5 +179,4 @@ export default {
   align-items: center;
   justify-content: center;
 }
-/* TODO: 测试日志 3 */
 </style>
